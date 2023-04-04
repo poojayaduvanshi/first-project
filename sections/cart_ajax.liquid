@@ -8,7 +8,7 @@
   <div data-ajax-cart-section>
     <h2>Cart</h2>
     
-    <div class="my-cart__items" data-ajax-cart-section-scroll>
+    <div class="my-cart__items" >
       {% for item in cart.items %}
         {% assign item_index = forloop.index %}
         <hr />  
@@ -41,9 +41,7 @@
       {% endfor %}
     </div>
     
-    <button type="submit" name="checkout">
-      Checkout — {{ cart.total_price | money_with_currency }}
-    </button> 
+   
   </div>
 
 
