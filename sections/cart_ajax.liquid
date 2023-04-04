@@ -1,6 +1,6 @@
-{% comment %} sections/my-cart.liquid {% endcomment %}
 
-<form action="{{ routes.cart_url }}" method="post" class="my-cart">
+
+
   
   <!-- Add the data-ajax-cart-section attribute 
   to a container that must be re-rendered 
@@ -45,7 +45,7 @@
       Checkout — {{ cart.total_price | money_with_currency }}
     </button> 
   </div>
-</form>
+
 
 {% schema %}
   {
